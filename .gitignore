@@ -1,23 +1,19 @@
-# Python
+# ban all:
+*
+
+# allow all:
+!*/
+
+#push files:
+!.gitignore
+!README.md
+!README.zh-CN.md
+!docs/**
+!src/**/*.py
+!src/**/*.sql
+!tests/**
+
+#unpush files:
 __pycache__/
-*.py[cod]
-.venv/
-venv/
+*.db*
 
-# Local configuration and secrets
-.env
-.env.*
-!.env.example
-*.key
-*.pem
-
-# Generated exports and local agent histories
-*.agentpack
-exports/
-agent-history-data/
-
-# Editors and operating systems
-.vscode/
-.idea/
-.DS_Store
-Thumbs.db
