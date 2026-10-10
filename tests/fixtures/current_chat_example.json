@@ -1,0 +1,41 @@
+{
+  "fixture_kind": "synthetic_example",
+  "notice": "Illustrative paraphrase of topics from the development discussion, not a raw conversation export.",
+  "conversation": {
+    "id": "example-current-chat",
+    "title": "Agent 历史归档与交接查询",
+    "workspace_ref": "Agent-History",
+    "started_at": "2026-10-09T09:00:00Z",
+    "source_format": "synthetic-example-v1",
+    "agent": {
+      "id": "example-agent",
+      "name": "Example chat",
+      "product": "synthetic fixture",
+      "adapter_id": "fixture.synthetic",
+      "adapter_version": "1"
+    }
+  },
+  "events": [
+    {
+      "id": "example-event-1",
+      "sequence": 0,
+      "event_type": "message",
+      "actor": "user",
+      "content": "希望把 Copilot 和 Cline 工作历史保存在 SQLite，并让 Agent 可查询交接上下文。"
+    },
+    {
+      "id": "example-event-2",
+      "sequence": 1,
+      "event_type": "message",
+      "actor": "assistant",
+      "content": "确定 SQLite 为权威档案，Markdown 自动生成交接流程，Agent 通过只读查询读取详细历史。"
+    },
+    {
+      "id": "example-event-3",
+      "sequence": 2,
+      "event_type": "message",
+      "actor": "user",
+      "content": "先实现数据读取，并以当前讨论作为参考例子。"
+    }
+  ]
+}
