@@ -1,0 +1,16 @@
+[agents.cline]
+label = "Cline"
+base = "home"
+markers = [".cline"]
+index = [".cline/data/db/sessions.db"]
+content = [".cline/data/sessions/*/*.messages.json"]
+verified = true
+
+[agents.copilot]
+label = "GitHub Copilot Chat (VS Code)"
+base = "appdata"
+markers = ["Code/User/globalStorage/github.copilot-chat"]
+index = ["Code/User/globalStorage/github.copilot-chat/session-store.db"]
+# 对话内容在 workspaceStorage，不在扩展目录下
+content = ["Code/User/workspaceStorage/*/chatSessions/*.jsonl"]
+verified = true

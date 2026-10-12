@@ -12,6 +12,7 @@
 !src/**/*.py
 !src/**/*.sql
 !tests/**
+!src/**/*.toml
 
 #unpush files:
 __pycache__/
